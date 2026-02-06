@@ -10,8 +10,9 @@
 #include <iostream>
 #include <list>
 #include <regex>
+#include <chrono>
 
-#ifdef _MSC_VER
+#ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 
