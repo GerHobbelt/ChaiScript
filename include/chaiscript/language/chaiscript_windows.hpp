@@ -86,6 +86,8 @@ namespace chaiscript {
         HMODULE m_data;
       };
 
+#pragma warning(push)
+#pragma warning(disable: 4191)
       template<typename T>
       struct DLSym {
         DLSym(DLModule &t_mod, const std::string &t_symbol)
@@ -97,6 +99,7 @@ namespace chaiscript {
 
         T m_symbol;
       };
+#pragma warning(pop)
 
       Loadable_Module(const std::string &t_module_name, const std::string &t_filename)
           : m_dlmodule(t_filename)
