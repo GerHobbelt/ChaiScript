@@ -10,6 +10,8 @@
 #ifndef CHAISCRIPT_AST_NODE_HPP_
 #define CHAISCRIPT_AST_NODE_HPP_
 
+#include <sstream>
+
 #include "../dispatchkit/dispatchkit.hpp"
 
 namespace chaiscript {
